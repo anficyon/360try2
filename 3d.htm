@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>3D Model</title>
+<script type="text/javascript" src="iv3d.js"></script>
+<link rel="stylesheet" type="text/css" href="ivstyles.css" />
+<script>
+function ivResizeCanvas(cnv)
+{
+  var r=cnv.getBoundingClientRect();
+  var width = document.body.clientWidth;//window.innerWidth;
+  var tree=document.getElementById("treeview-frame");
+  if(tree && tree.style.display!="none")
+   {
+	var rt=tree.getBoundingClientRect();
+	width-=rt.width;
+   }
